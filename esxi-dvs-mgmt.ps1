@@ -12,7 +12,7 @@ Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false
 # Ignore certificates
 Set-PowerCLIConfiguration -InvalidCertificateAction ignore -confirm:$false
 
-# VirtualCentre connectivity
+# VirtualCentre connectivity 
 Write-Host "Connecting to VC host " $vchost
 Connect-VIServer -Server $vchost -User $vcuser -Pass $vcpass
 
